@@ -1,0 +1,11 @@
+mobile/node_modules/**/*
+mobile/.expo/*
+mobile/npm-debug.*
+mobile/src/config.js
+mobile/.idea/
+
+server/node_modules/**/*
+server/.expo/*
+server/npm-debug.*
+server/src/config.js
+server/.idea/
