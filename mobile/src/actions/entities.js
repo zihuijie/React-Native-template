@@ -20,7 +20,7 @@ export function getAllCoinMarket() {
   return async (dispatch) => {
     dispatch({ type: 'GET_ALL_COIN_MARKET'});
     try {
-      const { data } = await CoinMarket.getAll(100);
+      const { data } = await CoinMarket.getAll(10);
       return dispatch(getAllCoinMarketSuccess(data));
     } catch (error) {
       return dispatch(getAllCoinMarketError(error));

@@ -18,6 +18,8 @@ yarn add react-navigation react-redux redux redux-thunk
 yarn add -D redux-logger
 yarn add -D flow-bin
 yarn add -D eslint eslint-config-equimper prettier eslint-config-prettier
+yarn add styled-components
+
 ```
 
 * edit .eslintrc
