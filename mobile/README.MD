@@ -92,3 +92,10 @@ export default combineReducers({
 ```
 5. setup /src/screens folder
 
+* edit HomeScreen.js
+
+6. install axios
+
+`yarn add axios`
+
+7.
