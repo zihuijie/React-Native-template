@@ -17,13 +17,18 @@ const Root = styled.View`
 flex: 1;
 `;
 
+const Separator = styled.View`
+height: 2;
+backgroundColor: blue;
+`;
  class HomeScreen extends Component {
   state = {}
   componentDidMount(){
     this.props.getAllCoinMarket();
   }
 
-  _renderItem = ({ item }: { item: CoinMarketCapData }) => <Coin data={item} />
+  _renderItem = ({ item }: { item: CoinMarketCapData }) => (
+      <Coin data={item} />);
 
   render() {
 
@@ -33,6 +38,7 @@ flex: 1;
 return (
      <Root>
      <FlatList
+       ItemSeparatorComponent={<Separator />}
        contentContainerStyle={{ alignSelf: 'stretch' }}
        keyExtractor={item => item.id}
        renderItem={this._renderItem}

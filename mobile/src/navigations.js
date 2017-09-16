@@ -32,6 +32,9 @@ const AppMainNav = StackNavigator(
   {
     Home: {
       screen: Tabs,
+      navigationOptions: {
+        headerTitle:'KeepMyFolio'
+      }
     }
   }
 )
